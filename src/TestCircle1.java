@@ -1,6 +1,6 @@
 import es.uah.matcomp.mp.e1.ejerciciosclases.Circle;
 
-public class TestCircle {
+public class TestCircle1 {
     public static void main(String[] args){
 
         Circle c1 = new Circle (6.7, "red");
