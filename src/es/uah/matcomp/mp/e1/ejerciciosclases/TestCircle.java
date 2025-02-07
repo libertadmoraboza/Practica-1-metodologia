@@ -1,6 +1,6 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases;
 
-public class TestMain {
+public class TestCircle {
     public static void main(String[] args){
         Circle c1 = new Circle(1.1, "red");
         System.out.println(c1);

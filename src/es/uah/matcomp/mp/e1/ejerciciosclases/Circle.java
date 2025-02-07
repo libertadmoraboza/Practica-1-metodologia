@@ -36,7 +36,7 @@ public class Circle {
     }
 
     public String toString(){
-        return "es.uah.matcomp.mp.e1.ejerciciosclases.Circle[radius=" + radius + ", color=" + color + "]";
+        return "Circle[radius=" + radius + ", color=" + color + "]";
     }
 
 }
