@@ -1,3 +1,5 @@
+package es.uah.matcomp.mp.e1.ejerciciosclases;
+
 public class Circle {
 
     private double radius;
@@ -34,7 +36,7 @@ public class Circle {
     }
 
     public String toString(){
-        return "Circle[radius=" + radius + ", color=" + color + "]";
+        return "es.uah.matcomp.mp.e1.ejerciciosclases.Circle[radius=" + radius + ", color=" + color + "]";
     }
 
 }
