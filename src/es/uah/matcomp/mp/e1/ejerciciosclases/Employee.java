@@ -1,9 +1,9 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases;
 
 public class Employee {
-    private int id;
-    private String firstName;
-    private String lastName;
+    private final int id;
+    private final String firstName;
+    private final String lastName;
     private int salary;
 
     public Employee(int i, String f, String l, int s){

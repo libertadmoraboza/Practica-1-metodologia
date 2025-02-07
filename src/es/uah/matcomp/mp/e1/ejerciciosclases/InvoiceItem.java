@@ -1,8 +1,8 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases;
 
 public class InvoiceItem {
-    private String id;
-    private String desc;
+    private final String id;
+    private final String desc;
     private int qty;
     private double unitPrice;
 
