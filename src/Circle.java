@@ -5,12 +5,11 @@ public class Circle {
 
     public Circle() {
         this.radius = radius;
-        color = "red";
     }
 
-    public Circle(double radius){
+    public Circle(double radius, String color){
         this.radius = radius;
-        color = "red";
+        this.color = color;
     }
 
     public double getRadius(){
