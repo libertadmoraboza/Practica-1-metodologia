@@ -37,15 +37,18 @@ public class Date {
     }
 
     public void setDate(int day, int month, int year){
+        this.day = day;
+        this.month = month;
+        this.year = year;
     }
 
     public String toString(){
         if (day < 10 && month < 10){
-            return "0" + day + "/ 0" + month + "/" + year;
+            return "0" + day + "/0" + month + "/" + year;
         } else if (day < 10 && month > 10){
             return "0" + day + "/" + month + "/" + year;
         } else if (day > 9 && month < 10){
-            return day + "/ 0" + month + "/" + year;
+            return day + "/0" + month + "/" + year;
         } else {
             return day + "/" + month + "/" + year;
         }
