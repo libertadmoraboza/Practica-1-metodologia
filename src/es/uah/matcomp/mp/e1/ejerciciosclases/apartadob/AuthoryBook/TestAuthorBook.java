@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases;
+package es.uah.matcomp.mp.e1.ejerciciosclases.apartadob.AuthoryBook;
 
 public class TestAuthorBook {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases;
+package es.uah.matcomp.mp.e1.ejerciciosclases.apartadob.Clienteyfactura;
 
-public class Invoice extends Customer{
+public class Invoice extends Customer {
     private int id;
     private Customer customer;
     private double amount;

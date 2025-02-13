@@ -1,6 +1,6 @@
 package e1apartadoa;
 
-import es.uah.matcomp.mp.e1.ejerciciosclases.Circle;
+import es.uah.matcomp.mp.e1.ejerciciosclases.apartadoa.Circle;
 
 public class TestCircle0 {
     public static void main(String[] args){
