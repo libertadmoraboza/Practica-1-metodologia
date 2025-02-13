@@ -1,14 +1,12 @@
-package e1apartadob;
+package es.uah.matcomp.mp.e1.ejerciciosclases;
 
 public class Author {
     private String name;
     private String email;
-    private char gender;
 
-    public Author(String name, String email, char gender){
+    public Author(String name, String email){
         this.name = name;
         this.email = email;
-        this.gender = gender;
     }
 
     public String getName(){
@@ -23,12 +21,7 @@ public class Author {
         this.email = email;
     }
 
-    public char getGender(){
-        return gender;
-    }
-
     public String toString(){
-        return "Author[name=" + name + ",email=" + email + ",gender=" + gender + "]";
+        return "Author[name=" + name + ",email=" + email + "]";
     }
 }
-

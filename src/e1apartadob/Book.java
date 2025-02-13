@@ -1,22 +1,24 @@
 package e1apartadob;
 
+import java.util.Arrays;
+
 public class Book extends Author{
     private String name;
-    private Author Author(String name, String email, char gender){
-        return new Author(name, email, gender);
-    }
+    protected Author[] authors;
     private double price;
     private int qty = 0;
 
 
-    public Book(String name, Author author, double price){
-        super(author.getName(), author.getEmail(), author.getGender());
+    public Book(String name, Author[] authors, double price){
+        super(authors[0].getName(), authors[0].getEmail(), authors[0].getGender());
+        this.authors = authors;
         this.name = name;
         this.price = price;
     }
 
-    public Book(String name, Author author, double price, int qty){
-        super(author.getName(), author.getEmail(), author.getGender());
+    public Book(String name, Author[] authors, double price, int qty){
+        super(authors[0].getName(), authors[0].getEmail(), authors[0].getGender());
+        this.authors = authors;
         this.name = name;
         this.price = price;
         this.qty = qty;
@@ -26,8 +28,8 @@ public class Book extends Author{
         return name;
     }
 
-    public Author getAuthor(){
-        return new Author(getName(), getEmail(), getGender());
+    public Author[] getAuthors(){
+        return authors;
     }
 
     public double getPrice(){
@@ -46,15 +48,15 @@ public class Book extends Author{
         this.qty = qty;
     }
 
-    public String getAuthorName(){
-        return Author.getName();
+    public String getAuthorNames(){
+        return authors[0].getName();
     }
 
     public String getAuthorEmail(){
-        return Author.getEmail();
+        return authors[0].getEmail();
     }
 
     public String toString(){
-        return "Book[name=" + name + Author + ",price=" + price + ",qty=" + qty + "]";
+        return "Book[name=" + name + ",authors=" + Arrays.toString(getAuthors()) + ",price=" + price + ",qty=" + qty + "]";
     }
 }

@@ -2,17 +2,18 @@ package es.uah.matcomp.mp.e1.ejerciciosclases;
 
 public class TestCircle {
     public static void main(String[] args){
-        Circle c1 = new Circle(1.1, "red");
-        System.out.println(c1);
-        Circle c2 = new Circle(2.5, "blue");
-        System.out.println(c2);
 
-        c1.setRadius(2.2);
-        System.out.println(c1);
-        System.out.println("radius is: " + c1.getRadius());
+        Circle c1 = new Circle (6.7, "red");
+        System.out.println(c1.toString());
 
-        System.out.printf("Area is: %.2f%n", c1.getArea());
-        System.out.printf("circumference is: %.2f%n", c1.getCircumference());
+        Circle c2 = new Circle(2.3, "blue");
+        System.out.println(c2.toString());
 
+        Circle c3 = new Circle(4.0, "green");
+        System.out.println(c3.toString());
+
+        Circle c4 = new Circle(5.5, "black");
+        System.out.println("The radius is: " + c4.getRadius());
+        System.out.println("The color is: " + c4.getColor());
     }
 }
