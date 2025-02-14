@@ -27,7 +27,7 @@ public class Account extends Customer{
     }
 
     public double getBalance(){
-        return Math.round(balance * 100.0) / 100.0;
+        return balance;
     }
 
     public void setBalance(double balance){
@@ -43,13 +43,13 @@ public class Account extends Customer{
     }
 
     public Account deposit(double amount){
-        balance += amount;
+        balance = Math.round((balance + amount) * 100.0) / 100.0 ;
         return this;
     }
 
     public Account withdraw(double amount){
         if (balance >= amount){
-            balance -= amount;
+            balance = Math.round((balance - amount) * 100.0) / 100.0;
         } else {
             System.out.println("amount withdrawn exceeds the current balance");
         } return this;
