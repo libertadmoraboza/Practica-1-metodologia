@@ -1,6 +1,6 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.apartadob.AuthorYBook;
 
-public class Book extends Author {
+public class Book{
     private String isbn;
     private String name;
     private Author author;
@@ -8,7 +8,6 @@ public class Book extends Author {
     private int qty = 0;
 
     public Book(String isbn, String name, Author author, double price) {
-        super(author.getName(), author.getEmail());
         this.isbn = isbn;
         this.name = name;
         this.author = author;
@@ -16,7 +15,6 @@ public class Book extends Author {
     }
 
     public Book(String isbn, String name, Author author, double price, int qty){
-        super(author.getName(), author.getEmail());
         this.isbn = isbn;
         this.name = name;
         this.author = author;

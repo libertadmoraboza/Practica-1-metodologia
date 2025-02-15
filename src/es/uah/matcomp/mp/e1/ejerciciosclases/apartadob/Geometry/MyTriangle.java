@@ -1,6 +1,6 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.apartadob.Geometry;
 
-public class MyTriangle extends MyPoint{
+public class MyTriangle {
     private MyPoint v1;
     private MyPoint v2;
     private MyPoint v3;

@@ -1,6 +1,6 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.apartadob.Geometry;
 
-public class MyCircle extends MyPoint{
+public class MyCircle {
     private MyPoint center = new MyPoint(0,0);
     private int radius = 1;
 

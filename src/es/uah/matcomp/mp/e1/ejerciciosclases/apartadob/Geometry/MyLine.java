@@ -1,6 +1,6 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.apartadob.Geometry;
 
-public class MyLine extends MyPoint{
+public class MyLine{
     private MyPoint begin;
     private MyPoint end;
 
@@ -51,7 +51,7 @@ public class MyLine extends MyPoint{
     }
 
     public void setEndX(int x){
-        end = new MyPoint(x, getY());
+        end = new MyPoint(x, getEndY());
     }
 
     public int getEndY(){

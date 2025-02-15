@@ -1,12 +1,11 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.apartadob.Clienteyfactura;
 
-public class Invoice extends Customer {
+public class Invoice{
     private int id;
     private Customer customer;
     private double amount;
 
     public Invoice(int id, Customer customer, double amount){
-        super(customer.getId(), customer.getName(), customer.getDiscount());
         this.id = id;
         this.customer = customer;
         this.amount = amount;
