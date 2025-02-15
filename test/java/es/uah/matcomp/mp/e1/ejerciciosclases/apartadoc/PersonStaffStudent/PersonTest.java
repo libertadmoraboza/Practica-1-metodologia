@@ -1,20 +1,21 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases.apartadob.AuthorYBook;
+package es.uah.matcomp.mp.e1.ejerciciosclases.apartadoc.PersonStaffStudent;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-class AuthorTest {
+
+class PersonTest {
 
     @Test
     void getName() {
     }
 
     @Test
-    void getEmail() {
+    void getAddress() {
     }
 
     @Test
-    void setEmail() {
+    void setAddress() {
     }
 
     @Test

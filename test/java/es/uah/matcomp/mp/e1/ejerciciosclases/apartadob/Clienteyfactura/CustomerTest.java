@@ -1,20 +1,25 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases.apartadob.AuthorYBook;
+package es.uah.matcomp.mp.e1.ejerciciosclases.apartadob.Clienteyfactura;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-class AuthorTest {
+
+class CustomerTest {
+
+    @Test
+    void getId() {
+    }
 
     @Test
     void getName() {
     }
 
     @Test
-    void getEmail() {
+    void getDiscount() {
     }
 
     @Test
-    void setEmail() {
+    void setDiscount() {
     }
 
     @Test
