@@ -1,4 +1,4 @@
-package e1apartadoc;
+package es.uah.matcomp.mp.e1.ejerciciosclases.apartadoc.ParteTeórica;
 
 public class Circle {
     private double radius = 1.0;

@@ -1,4 +1,4 @@
-package e1apartadob;
+package es.uah.matcomp.mp.e1.ejerciciosclases.apartadob.ParteTeórica;
 
 import java.util.Arrays;
 

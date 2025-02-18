@@ -1,4 +1,4 @@
-package e1apartadoc;
+package es.uah.matcomp.mp.e1.ejerciciosclases.apartadoc.ParteTeórica;
 
 public class Cylinder extends Circle{
     private double height = 1.0;

@@ -1,8 +1,8 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases.apartadoc.Shapes;
+package es.uah.matcomp.mp.e1.ejerciciosclases.apartadod.Polimorfismos;
 
-public class Square extends Rectangle{
+public class Square extends Rectangle {
 
-    public Square(){};
+    public Square(){}
     public Square(double side){
         super(side, side);
     }
@@ -11,12 +11,12 @@ public class Square extends Rectangle{
     }
 
     public double getSide(){
-        return super.getLength(); //También valdría width porque se supone que un cuadrado tiene los lados iguales
+        return super.getWidth();
     }
 
     public void setSide(double side){
-        super.setLength(side);
         super.setWidth(side);
+        super.setLength(side);
     }
 
     @Override
@@ -33,6 +33,4 @@ public class Square extends Rectangle{
     public String toString(){
         return "Square[" + super.toString() + "]";
     }
-
-
 }

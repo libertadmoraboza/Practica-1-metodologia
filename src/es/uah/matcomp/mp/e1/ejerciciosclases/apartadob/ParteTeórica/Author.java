@@ -1,4 +1,4 @@
-package e1apartadob;
+package es.uah.matcomp.mp.e1.ejerciciosclases.apartadob.ParteTeórica;
 
 public class Author {
     private String name;
