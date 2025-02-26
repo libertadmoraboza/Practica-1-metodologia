@@ -10,7 +10,8 @@ public class Cat extends Mammal{
         System.out.println("Meow");
     }
 
+    @Override
     public String toString(){
-        return "Car: Cat[" + super.toString() + "]";
+        return "Cat[" + super.toString() + "]";
     }
 }

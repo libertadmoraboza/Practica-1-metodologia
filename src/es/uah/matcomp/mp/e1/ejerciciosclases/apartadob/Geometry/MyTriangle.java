@@ -26,26 +26,15 @@ public class MyTriangle {
     }
 
     public String getType(){
-        if (v1.distance(v2) == v2.distance(v3)) {
-            if (v1.distance(v2) == v3.distance(v1)){
-                return "Equilateral";
-            } else if (v1.distance(v2) != v3.distance(v1)){
-            return "Isosceles";}
-        } else if (v2.distance(v3) == v3.distance(v1)){
-            if (v1.distance(v2) != v3.distance(v1)){
-                return "Isosceles";
-            } else if (v2.distance(v3) == v1.distance(v2)){
-                return "Equilateral";
-            }
-        } else if (v3.distance(v1) == v1.distance(v2)){
-            if (v2.distance(v3) != v3.distance(v1)){
-                return "Isosceles";
-            } else if (v2.distance(v3) == v3.distance(v1)){
-                return "Equilateral";
-            }
+        double d1 = v1.distance(v2);
+        double d2 = v2.distance(v3);
+        double d3 = v3.distance(v1);
+        if (d1 == d2 && d2 == d3){
+            return "Equilateral";
+        } else if (d1 == d2 || d2 == d3 || d3 == d1){
+            return "Isosceles";
         } else {
             return "Scalene";
         }
-        return null;
     }
 }

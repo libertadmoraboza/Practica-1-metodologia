@@ -1,16 +1,16 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.apartadoa;
 
 public class Employee {
-    private final int id;
-    private final String firstName;
-    private final String lastName;
+    private int id;
+    private String firstName;
+    private String lastName;
     private int salary;
 
-    public Employee(int i, String f, String l, int s){
-        this.id = i;
-        this.firstName = f;
-        this.lastName = l;
-        this.salary = s;
+    public Employee(int id, String firstName, String lastName, int salary){
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.salary = salary;
     }
 
     public String getFirstName(){
@@ -42,12 +42,12 @@ public class Employee {
     }
 
     public int raiseSalary(int percent){
-        salary = 12 * salary * percent / 100;
+        salary += salary * percent / 100;
         return salary;
     }
 
 
     public String toString(){
-        return "Employee[id=" + id + ", name=" + firstName + " " + lastName + ", salary=" + salary + "]";
+        return "Employee[id=" + id + ", name=" + getName() + ", salary=" + salary + "]";
     }
 }

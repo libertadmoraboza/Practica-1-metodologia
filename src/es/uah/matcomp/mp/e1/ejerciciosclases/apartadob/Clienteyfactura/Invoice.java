@@ -44,11 +44,11 @@ public class Invoice{
     }
 
     public double getAmountAfterDiscount(){
-        amount = amount - (amount * (customer.getDiscount() * 0.01));
+        amount -= (amount * (getCustomerDiscount() * 0.01));
         return amount;
     }
 
     public String toString(){
-        return "Invoice[id=" + id + "," + customer + ",amount=" + amount + "]";
+        return "Invoice[id=" + id + "," + customer.toString() + ",amount=" + amount + "]";
     }
 }

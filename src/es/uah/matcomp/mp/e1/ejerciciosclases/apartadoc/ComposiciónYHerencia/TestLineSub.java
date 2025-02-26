@@ -32,8 +32,8 @@ public class TestLineSub {
         l2.setEndXY(7,7);
         System.out.println(l2);
 
-        System.out.println("La longitud de l2 es " + l2.getLength());
-        System.out.println("El gradiente de l2 es " + l1.getGradient());
+        System.out.printf("La longitud de l2 es %.2f%n", l2.getLength());
+        System.out.printf("El gradiente de l2 es %.2f%n", l1.getGradient());
 
     }
 }

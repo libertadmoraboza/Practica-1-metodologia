@@ -66,7 +66,7 @@ public class MyPoint {
     }
 
     public double distance(int x, int y){
-        return Math.round(Math.sqrt(Math.pow(x - this.x, 2) + Math.pow(y - this.y, 2)) * 100.0) / 100.0 ;
+        return Math.round(Math.sqrt(Math.pow(x - this.x, 2) + Math.pow(y - this.y, 2)) * 100.0) / 100.0;
     }
 
     public double distance(MyPoint another){

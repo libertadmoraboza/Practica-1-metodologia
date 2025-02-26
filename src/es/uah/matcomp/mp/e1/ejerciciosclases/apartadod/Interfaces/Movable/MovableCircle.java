@@ -2,7 +2,7 @@ package es.uah.matcomp.mp.e1.ejerciciosclases.apartadod.Interfaces.Movable;
 
 import java.util.Arrays;
 
-public class MovableCircle {
+public class MovableCircle implements Movable{
     private int radius;
     private MovablePoint center;
 

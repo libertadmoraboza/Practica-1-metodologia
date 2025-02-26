@@ -2,7 +2,9 @@ package es.uah.matcomp.mp.e1.ejerciciosclases.apartadoc.Shapes;
 
 public class Square extends Rectangle{
 
-    public Square(){};
+    public Square(){
+        super();
+    };
     public Square(double side){
         super(side, side);
     }
@@ -21,12 +23,12 @@ public class Square extends Rectangle{
 
     @Override
     public void setWidth(double side){
-        super.setWidth(side);
+        setSide(side);
     }
 
     @Override
     public void setLength(double side){
-        super.setLength(side);
+        setSide(side);
     }
 
     @Override

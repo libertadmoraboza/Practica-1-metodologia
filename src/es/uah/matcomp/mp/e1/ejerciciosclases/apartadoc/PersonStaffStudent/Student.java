@@ -3,13 +3,13 @@ package es.uah.matcomp.mp.e1.ejerciciosclases.apartadoc.PersonStaffStudent;
 public class Student extends Person {
     private String program;
     private int year;
-    private double free;
+    private double fee;
 
-    public Student(String name, String address, String program, int year, double free){
+    public Student(String name, String address, String program, int year, double fee){
         super(name, address);
         this.program = program;
         this.year = year;
-        this.free = free;
+        this.fee = fee;
     }
 
     public String getProgram(){
@@ -28,17 +28,17 @@ public class Student extends Person {
         this.year = year;
     }
 
-    public double getFree(){
-        return free;
+    public double getFee(){
+        return fee;
     }
 
-    public void setFree(double free){
-        this.free = free;
+    public void setFee(double fee){
+        this.fee = fee;
     }
 
     @Override
     public String toString(){
-        return "Student[" + super.toString() + ", program=" + program + ", yaer=" + year + ", free=" + free + "]";
+        return "Student[" + super.toString() + ", program=" + program + ", yaer=" + year + ", fee=" + fee + "]";
     }
 
 }

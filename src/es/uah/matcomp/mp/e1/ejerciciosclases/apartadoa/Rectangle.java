@@ -1,33 +1,33 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.apartadoa;
 
 public class Rectangle {
-    private double length;
-    private double width;
+    private float length;
+    private float width;
 
     public Rectangle(){
-        length = 1.0;
-        width = 1.0;
+        this.length = 1.0f;
+        this.width = 1.0f;
     }
 
-    public Rectangle(double l, double w){
-        length = l;
-        width = w;
+    public Rectangle(float length, float width){
+        this.length = length;
+        this.width = width;
     }
 
-    public double getLength(){
+    public float getLength(){
         return length;
     }
 
-    public double getWidth(){
+    public float getWidth(){
         return width;
     }
 
-    public void setLength(double l){
-        this.length = l;
+    public void setLength(float length){
+        this.length = length;
     }
 
-    public void setWidth(double w){
-        this.width = w;
+    public void setWidth(float width){
+        this.width = width;
     }
 
     public double getArea(){
@@ -35,11 +35,11 @@ public class Rectangle {
     }
 
     public double getPerimeter(){
-        return 2 * length * width;
+        return 2 * (length + width);
     }
 
     public String toString(){
-        return ("%.2f Rectangle[length=" + length + ", width=" + width + "]");
+        return ("Rectangle[length=" + length + ", width=" + width + "]");
     }
 
 

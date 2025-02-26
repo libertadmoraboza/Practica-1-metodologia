@@ -14,7 +14,8 @@ public class Dog extends Mammal{
         System.out.println("Wooooof");
     }
 
+    @Override
     public String toString(){
-        return "Dog: Dog[" + super.toString() + "]";
+        return "Dog[" + super.toString() + "]";
     }
 }

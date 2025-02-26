@@ -33,7 +33,7 @@ public class Account{
     }
 
     public String toString(){
-        return customer + " balance=$" + balance;
+        return customer.toString() + " balance=$" + balance;
     }
 
     public String getCustomerName(){
@@ -41,13 +41,13 @@ public class Account{
     }
 
     public Account deposit(double amount){
-        balance = Math.round((balance + amount) * 100.0) / 100.0 ;
+        balance += amount;
         return this;
     }
 
     public Account withdraw(double amount){
         if (balance >= amount){
-            balance = Math.round((balance - amount) * 100.0) / 100.0;
+            balance -= amount;
         } else {
             System.out.println("amount withdrawn exceeds the current balance");
         } return this;

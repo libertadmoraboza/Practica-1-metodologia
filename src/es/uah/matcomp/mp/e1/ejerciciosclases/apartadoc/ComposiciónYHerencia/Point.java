@@ -2,9 +2,10 @@ package es.uah.matcomp.mp.e1.ejerciciosclases.apartadoc.ComposiciónYHerencia;
 
 public class Point {
         // Private variables
-        private int x; // x co-ordinate
-        private int y; // y co-ordinate
+        private int x = 0; // x co-ordinate
+        private int y = 0; // y co-ordinate
         // Constructor
+        public Point(){}
         public Point (int x, int y) {
             this.x = x;
             this.y = y;
@@ -28,5 +29,11 @@ public class Point {
         public void setXY(int x, int y) {
             this.x = x;
             this.y = y;
+        }
+        public int[] getXY(){
+            int[] result = new int[2];
+            result[0] = x;
+            result[1] = y;
+            return result;
         }
 }

@@ -2,17 +2,20 @@ package es.uah.matcomp.mp.e1.ejerciciosclases.apartadoa;
 
 public class Circle {
 
-    private double radius;
-    private String color;
+    private double radius = 1.0;
 
-    public Circle(double radius, String color){
+    public Circle(){}
+
+    public Circle(double radius){
         this.radius = radius;
-        this.color = color;
     }
 
     public double getRadius(){
         return radius;
+    }
 
+    public void setRadius(double radius){
+        this.radius = radius;
     }
 
     public double getArea(){
@@ -23,20 +26,8 @@ public class Circle {
         return 2*Math.PI*radius;
     }
 
-    public String getColor(){
-        return color;
-    }
-
-    public void setRadius(double radius){
-        this.radius = radius;
-    }
-
-    public void setColor(String newColor){
-        color = newColor;
-    }
-
     public String toString(){
-        return "Circle[radius=" + radius + ", color=" + color + "]";
+        return "Circle[radius=" + radius + "]";
     }
 
 }

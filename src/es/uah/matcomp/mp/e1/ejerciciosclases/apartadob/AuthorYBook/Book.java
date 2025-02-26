@@ -55,6 +55,6 @@ public class Book{
     }
 
     public String toString(){
-        return "Book[isbn=" + isbn + ",name=" + name + "," + author + ",price=" + price + ",qty=" + qty + "]";
+        return "Book[isbn=" + isbn + ",name=" + name + "," + author.toString() + ",price=" + price + ",qty=" + qty + "]";
     }
 }

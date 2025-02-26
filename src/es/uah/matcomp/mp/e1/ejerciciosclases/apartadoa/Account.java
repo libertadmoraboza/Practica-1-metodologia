@@ -1,8 +1,8 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.apartadoa;
 
 public class Account {
-    private final String id;
-    private final String name;
+    private String id;
+    private String name;
     private int balance;
 
     public Account(String id, String name){
@@ -29,13 +29,13 @@ public class Account {
     }
 
     public int credit(int amount){
-        balance = balance + amount;
+        balance += amount;
         return balance;
     }
 
     public int debit(int amount){
         if (amount <= balance) {
-            balance = balance - amount;
+            balance -= amount;
         } else {
             System.out.println("Amount exceeded balance.");
         }
@@ -44,8 +44,8 @@ public class Account {
 
     public int transferTo(Account another, int amount){
         if (amount <= balance){
-            balance = balance - amount;
-            another.credit(amount);
+            balance -= amount;
+            another.balance += amount;
         } else {
             System.out.println("Amount exceeded balance.");
         }

@@ -18,6 +18,6 @@ public class Rectangle implements GeometricObject {
     }
 
     public double getPerimeter(){
-        return 2 * width + 2 * length;
+        return 2 * (width + length);
     }
 }

@@ -61,11 +61,11 @@ public class MyCircle {
     }
 
     public double getArea(){
-        return Math.round(Math.PI * radius * radius * 100.0) / 100.0;
+        return Math.PI * radius * radius;
     }
 
     public double getCircumference(){
-        return Math.round(2 * Math.PI * radius * 100.0) / 100.0;
+        return 2 * Math.PI * radius;
     }
 
     public double distance(MyCircle another){

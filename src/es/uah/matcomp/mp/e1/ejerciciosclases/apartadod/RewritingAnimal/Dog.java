@@ -6,6 +6,7 @@ public class Dog extends Animal {
         super(name);
     }
 
+    @Override
     public void greets(){
         System.out.println("Woof");
     }

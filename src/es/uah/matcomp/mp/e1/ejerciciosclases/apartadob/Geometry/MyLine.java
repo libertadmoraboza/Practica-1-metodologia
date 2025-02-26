@@ -83,7 +83,7 @@ public class MyLine{
     }
 
     public double getGradient(){
-        return Math.round(Math.atan2(getEndY() - getBeginY(), getEndX() - getBeginX()) * 100.0 / 100.0) ;
+        return Math.atan2(getEndY() - getBeginY(), getEndX() - getBeginX());
     }
 
     public String toString(){
