@@ -3,7 +3,7 @@ package es.uah.matcomp.mp.e1.ejerciciosclases.apartadoa;
 public class Account {
     private String id;
     private String name;
-    private int balance;
+    private int balance = 0;
 
     public Account(String id, String name){
         this.id = id;
